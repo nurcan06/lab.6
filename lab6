@@ -1,0 +1,11 @@
+import random
+
+n = int(input())
+
+A = [[random.randint(1, 9) for _ in range(n)] for _ in range(n)]
+
+print("Massiv A:") for sətir in A: print(sətir)
+
+hasil = 1 for i in range(n): for j in range(i): hasil *= A[i][j]
+
+print(hasil)
